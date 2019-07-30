@@ -1,0 +1,81 @@
+# Model of user information and identifiers
+type User {
+    # Unique identifier given to each user in the system
+    id: String!
+
+    # The username a user has chosen to be identified with
+    username: String!
+
+    # The users address
+    address: Address!
+}
+
+# Model of an address
+type Address {
+    # The mailing address, ex 1234, GraphQL Rd
+        mailing: String!
+
+        # The address city
+        city: String!
+
+        # The address state
+        state: String!
+
+        # The address postal code, ex 77019
+        postal: String!
+}
+
+# Input object used to post a new user to the system.
+input UserInput {
+    # The new user's username
+    username: String!
+
+    # The new user's address
+    address: AddressInput!
+}
+
+# Input object used to post new addresses
+input AddressInput {
+    # The mailing address, ex 1234, GraphQL Rd
+    mailing: String!
+
+    # The address city
+    city: String!
+
+    # The address state
+    state: String!
+
+    # The address postal code, ex 77019
+    postal: String!
+}
+
+# Input for querying users by their specific properties
+input UserFilter {
+    # The username to filter by
+    username: String
+
+    # The mailing address to filter by
+    mailing: String
+
+    # The address postal code to filter by
+    postal: String
+
+    # The city to filter by
+    city: String
+
+    # The state to filter by
+    state: String
+}
+
+extend type Query {
+    # Retrieves a user by their id
+    userById(id: String!): User
+
+    # Used to retrieve all users in the system.
+    allUsers(filter: UserFilter): [User]!
+}
+
+type Mutation {
+    # Used to create a new user in the system
+    createUser(input: UserInput!): User!
+}

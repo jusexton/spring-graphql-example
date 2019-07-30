@@ -1,0 +1,5 @@
+# All available queries
+type Query {
+    # The current version of the application
+    version: String!
+}
