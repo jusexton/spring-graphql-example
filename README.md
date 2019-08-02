@@ -23,14 +23,14 @@ type Mutation {
 }
 ```
 
-```
+```kotlin
 fun createUser(userInput: UserInput) = userRepository.save(User(userInput.username, userInput.address))
 ```
 
 ### Querying Users
 ![Alt text](screenshots/query-screenshot.png?raw=true "Query Screenshot")
 
-```aidl
+```
 extend type Query {
     # Retrieves a user by their id
     userById(id: String!): User
@@ -40,7 +40,7 @@ extend type Query {
 }
 ```
 
-```aidl
+```kotlin
 fun userById(id: String) = userService.repository.findById(id).orElseThrow { UserNotFoundException(id) }
 
 fun allUsers(filter: UserFilter?) = userService.findAll(filter)
@@ -49,7 +49,7 @@ fun allUsers(filter: UserFilter?) = userService.findAll(filter)
 ### Error Messages
 ![Alt text](screenshots/error-screenshot.png?raw=true "Error Screenshot")
 
-```aidl
+```kotlin
 @Component
 class ErrorHandler : GraphQLErrorHandler {
     override fun processErrors(errors: MutableList<GraphQLError>?): MutableList<GraphQLError> =
