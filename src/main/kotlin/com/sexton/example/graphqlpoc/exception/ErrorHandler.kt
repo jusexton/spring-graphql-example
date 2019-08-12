@@ -1,4 +1,4 @@
-package com.aig.example.graphqlpoc.exception
+package com.sexton.example.graphqlpoc.exception
 
 import graphql.ExceptionWhileDataFetching
 import graphql.GraphQLError

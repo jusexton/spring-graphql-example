@@ -1,8 +1,8 @@
-package com.aig.example.graphqlpoc.service
+package com.sexton.example.graphqlpoc.service
 
-import com.aig.example.graphqlpoc.model.User
-import com.aig.example.graphqlpoc.repository.UserRepository
-import com.aig.example.graphqlpoc.repository.filter.UserFilter
+import com.sexton.example.graphqlpoc.model.User
+import com.sexton.example.graphqlpoc.repository.UserRepository
+import com.sexton.example.graphqlpoc.repository.filter.UserFilter
 import org.springframework.data.mongodb.core.MongoTemplate
 import org.springframework.stereotype.Service
 

@@ -1,4 +1,4 @@
-package com.aig.example.graphqlpoc.model
+package com.sexton.example.graphqlpoc.model
 
 import org.bson.types.ObjectId
 import org.springframework.data.annotation.Id

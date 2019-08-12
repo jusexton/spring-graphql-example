@@ -1,4 +1,4 @@
-package com.aig.example.graphqlpoc.repository.filter
+package com.sexton.example.graphqlpoc.repository.filter
 
 import org.springframework.data.mongodb.core.query.Query
 

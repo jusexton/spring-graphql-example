@@ -1,11 +1,11 @@
-package com.aig.example.graphqlpoc
+package com.sexton.example.graphqlpoc
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class GraphQLPocApplication
+class SpringGraphQLExample
 
 fun main(args: Array<String>) {
-    runApplication<GraphQLPocApplication>(*args)
+    runApplication<SpringGraphQLExample>(*args)
 }

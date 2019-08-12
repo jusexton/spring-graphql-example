@@ -1,8 +1,8 @@
-package com.aig.example.graphqlpoc.resolver
+package com.sexton.example.graphqlpoc.resolver
 
-import com.aig.example.graphqlpoc.exception.UserNotFoundException
-import com.aig.example.graphqlpoc.repository.filter.UserFilter
-import com.aig.example.graphqlpoc.service.UserService
+import com.sexton.example.graphqlpoc.exception.UserNotFoundException
+import com.sexton.example.graphqlpoc.repository.filter.UserFilter
+import com.sexton.example.graphqlpoc.service.UserService
 import com.coxautodev.graphql.tools.GraphQLQueryResolver
 import org.springframework.stereotype.Component
 

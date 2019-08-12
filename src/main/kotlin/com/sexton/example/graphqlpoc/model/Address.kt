@@ -1,4 +1,4 @@
-package com.aig.example.graphqlpoc.model
+package com.sexton.example.graphqlpoc.model
 
 data class Address(val mailing: String,
                    val city: String,

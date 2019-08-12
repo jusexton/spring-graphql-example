@@ -1,4 +1,4 @@
-package com.aig.example.graphqlpoc
+package com.sexton.example.graphqlpoc
 
 import org.junit.Test
 import org.junit.runner.RunWith
